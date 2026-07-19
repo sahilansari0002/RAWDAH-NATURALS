@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact Us — RAWDAH NATURALS</title>
+<meta name="description" content="Contact RAWDAH NATURALS — Dr. Umer Adil Khan & Dr. Farheen Ansari. Phone: 9356558115. Located at Street No. 3, Karim Nagar, Kannad, Aurangabad, Maharashtra."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+<style>
+.contact-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:64px;align-items:start}
+.contact-info-card{background:linear-gradient(135deg,#0d4a2e,#1a7a4a);border-radius:24px;padding:40px;color:#fff;position:sticky;top:calc(var(--nav-height)+24px)}
+.contact-info-card h3{font-family:'Poppins',sans-serif;font-weight:700;font-size:22px;color:#fff;margin-bottom:8px}
+.contact-info-card p{font-size:14px;color:rgba(255,255,255,.75);margin-bottom:32px;line-height:1.6}
+.contact-info-item{display:flex;gap:16px;margin-bottom:28px;align-items:flex-start}
+.contact-info-icon{width:44px;height:44px;background:rgba(255,255,255,.12);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.contact-info-label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,.55);margin-bottom:4px}
+.contact-info-value{font-size:15px;font-weight:600;color:#fff;line-height:1.5}
+.contact-info-value a{color:var(--color-gold-light);transition:opacity .2s}
+.contact-info-value a:hover{opacity:.8}
+.owners-divider{border-top:1px solid rgba(255,255,255,.15);margin:24px 0;padding-top:24px}
+.owners-label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,.55);margin-bottom:12px}
+.owner-item{display:flex;align-items:center;gap:12px;margin-bottom:10px;font-size:15px;color:#fff}
+.quick-contact{display:flex;flex-direction:column;gap:10px;margin-top:28px}
+.quick-contact a{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:14px 18px;color:#fff;font-size:14px;font-weight:600;font-family:'Poppins',sans-serif;transition:all .2s;text-decoration:none}
+.quick-contact a:hover{background:rgba(255,255,255,.2)}
+.contact-form-card{background:var(--color-white);border-radius:24px;padding:40px;box-shadow:var(--shadow-card);border:1px solid var(--color-border)}
+.contact-form-card h3{font-family:'Poppins',sans-serif;font-weight:700;font-size:22px;color:var(--color-heading);margin-bottom:8px}
+.contact-form-card p{font-size:14px;color:var(--color-muted);margin-bottom:28px}
+.form-group{margin-bottom:20px}
+.form-label{display:block;font-size:13px;font-weight:600;color:var(--color-heading);margin-bottom:6px;font-family:'Poppins',sans-serif}
+.form-control{width:100%;padding:14px 16px;font-size:15px;font-family:'Inter',sans-serif;color:var(--color-heading);background:var(--color-cream);border:1.5px solid var(--color-border);border-radius:12px;transition:border-color .2s,box-shadow .2s;outline:none;resize:vertical}
+.form-control:focus{border-color:var(--color-primary);box-shadow:0 0 0 3px rgba(26,122,74,.1)}
+.form-control::placeholder{color:var(--color-muted)}
+textarea.form-control{min-height:130px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-success{display:none;background:#d4eddf;border:1px solid rgba(26,122,74,.3);border-radius:12px;padding:16px 20px;color:#0d4a2e;font-size:15px;font-weight:600;margin-top:16px;text-align:center}
+.form-success.show{display:block}
+.map-section{margin-top:64px}
+.map-section iframe{width:100%;height:420px;border-radius:24px;border:none;box-shadow:var(--shadow-card)}
+@media(max-width:900px){
+  .contact-grid{grid-template-columns:1fr}
+  .contact-info-card{position:static}
+  .form-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<!-- PAGE LOADER -->
+<div class="page-loader" id="pageLoader">
+  <div class="loader-mortar">
+    <div class="loader-leaf leaf-1">🌿</div>
+    <div class="loader-leaf leaf-2">🍃</div>
+    <div class="loader-leaf leaf-3">✨</div>
+    <div class="mortar-pestle"></div>
+    <div class="mortar-bowl"></div>
+  </div>
+  <div class="loader-text">RAWDAH NATURALS</div>
+  <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+</div>
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🌿</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">RAWDAH NATURALS</span>
+        <span class="nav-logo-tagline">Pure Nature • Trusted Care</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="tel:9356558115" class="btn btn-primary">📞 Call Now</a></div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a><a href="about.html">About Us</a><a href="products.html">Products</a><a href="contact.html">Contact</a>
+</div>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="page-hero-label">📞 Get in Touch</div>
+    <h1>Contact RAWDAH NATURALS</h1>
+    <p>We'd love to hear from you — place an order, ask about products, or just say hello!</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span class="breadcrumb-sep">›</span><span>Contact</span>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- INFO CARD -->
+      <div class="contact-info-card reveal">
+        <h3>RAWDAH NATURALS</h3>
+        <p>Premium Herbal &amp; Natural Skincare Products</p>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📞</div>
+          <div>
+            <div class="contact-info-label">Phone</div>
+            <div class="contact-info-value"><a href="tel:9356558115">9356558115</a></div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">✉️</div>
+          <div>
+            <div class="contact-info-label">Email</div>
+            <div class="contact-info-value"><a href="mailto:rawdahnaturals@gmail.com">rawdahnaturals@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📍</div>
+          <div>
+            <div class="contact-info-label">Address</div>
+            <div class="contact-info-value">Street No. 3, Karim Nagar,<br/>Near Sillod Kannad Road,<br/>Kannad, District Aurangabad,<br/>Maharashtra – 431103</div>
+          </div>
+        </div>
+
+        <div class="owners-divider">
+          <div class="owners-label">Owners / Founders</div>
+          <div class="owner-item">👨‍⚕️ Dr. Umer Adil Khan</div>
+          <div class="owner-item">👩‍⚕️ Dr. Farheen Ansari</div>
+        </div>
+
+        <div class="quick-contact">
+          <a href="tel:9356558115">📞 Call Us Now</a>
+          <a href="https://wa.me/919356558115" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+          <a href="mailto:rawdahnaturals@gmail.com">✉️ Send Email</a>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div class="contact-form-card reveal reveal-delay-2">
+        <h3>Send Us a Message</h3>
+        <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="fname">First Name *</label>
+              <input class="form-control" type="text" id="fname" name="fname" placeholder="Your first name" required/>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="lname">Last Name</label>
+              <input class="form-control" type="text" id="lname" name="lname" placeholder="Your last name"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone Number *</label>
+            <input class="form-control" type="tel" id="phone" name="phone" placeholder="Your phone number" required/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input class="form-control" type="email" id="email" name="email" placeholder="your@email.com"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="product">Product of Interest</label>
+            <select class="form-control" id="product" name="product">
+              <option value="">Select a product...</option>
+              <option value="saffron-cream">Saffron Night Cream</option>
+              <option value="nila-soap">Moroccan Blue Nila Soap</option>
+              <option value="both">Both Products</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message *</label>
+            <textarea class="form-control" id="message" name="message" placeholder="Tell us about your inquiry or order details..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center" id="submitBtn">Send Message ✉️</button>
+          <div class="form-success" id="formSuccess">✅ Thank you! Your message has been sent. We'll contact you shortly.</div>
+        </form>
+      </div>
+    </div>
+
+    <!-- MAP -->
+    <div class="map-section reveal">
+      <div class="section-header center" style="margin-bottom:32px">
+        <span class="section-label">Find Us</span>
+        <h2 class="section-title">Our Location</h2>
+        <p class="section-subtitle">Kannad, District Aurangabad, Maharashtra</p>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3748.6!2d75.1378!3d20.2700!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDE2JzEyLjAiTiA3NcKwMDgnMTYuMSJF!5e0!3m2!1sen!2sin!4v1000000000000!5m2!1sen!2sin"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="RAWDAH NATURALS Location - Kannad, Aurangabad">
+      </iframe>
+      <div style="text-align:center;margin-top:20px">
+        <a href="https://www.google.com/maps/search/Kannad+Aurangabad+Maharashtra" target="_blank" rel="noopener" class="btn btn-secondary">📍 Open in Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo-name">🌿 RAWDAH NATURALS</div>
+        <p class="footer-tagline">Premium Herbal &amp; Natural Skincare Products.</p>
+        <div class="footer-contact-item">📞 <a href="tel:9356558115">9356558115</a></div>
+        <div class="footer-contact-item" style="margin-top:8px">✉️ <a href="mailto:rawdahnaturals@gmail.com">rawdahnaturals@gmail.com</a></div>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="products.html">Products</a><a href="contact.html">Contact</a></div>
+      </div>
+      <div>
+        <div class="footer-col-title">Products</div>
+        <div class="footer-links"><a href="product-saffron.html">Saffron Night Cream</a><a href="product-nila.html">Moroccan Blue Nila Soap</a></div>
+      </div>
+      <div>
+        <div class="footer-col-title">Address</div>
+        <p style="font-size:14px;color:rgba(255,255,255,.65);line-height:1.75">Street No. 3, Karim Nagar,<br/>Near Sillod Kannad Road,<br/>Kannad, District Aurangabad,<br/>Maharashtra – 431103</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-bottom-text">© 2026 RAWDAH NATURALS. All Rights Reserved.</span>
+      <span class="footer-bottom-text">Dr. Umer Adil Khan &amp; Dr. Farheen Ansari</span>
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/919356558115" class="whatsapp-btn" target="_blank" rel="noopener">💬</a>
+<button class="scroll-top" id="scrollTop">↑</button>
+<script>
+const navbar=document.getElementById('navbar');
+const scrollTop=document.getElementById('scrollTop');
+window.addEventListener('scroll',()=>{navbar.classList.toggle('scrolled',window.scrollY>20);scrollTop.classList.toggle('visible',window.scrollY>400)});
+scrollTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('open'));
+const obs=new IntersectionObserver(e=>e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Form submission
+document.getElementById('contactForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const fname=document.getElementById('fname').value.trim();
+  const phone=document.getElementById('phone').value.trim();
+  const message=document.getElementById('message').value.trim();
+  if(!fname||!phone||!message){alert('Please fill in all required fields.');return}
+  const btn=document.getElementById('submitBtn');
+  btn.textContent='Sending...';btn.disabled=true;
+  setTimeout(()=>{
+    document.getElementById('formSuccess').classList.add('show');
+    btn.textContent='Send Message ✉️';btn.disabled=false;
+    e.target.reset();
+    setTimeout(()=>document.getElementById('formSuccess').classList.remove('show'),6000);
+  },1200);
+});
+</script>
+<script>
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const loader = document.getElementById('pageLoader');
+    if(loader) loader.classList.add('hidden');
+  }, 1200);
+});
+</script>
+</body>
+</html>

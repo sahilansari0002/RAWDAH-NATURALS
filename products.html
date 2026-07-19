@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Products — RAWDAH NATURALS</title>
+<meta name="description" content="Explore RAWDAH NATURALS premium herbal products: Saffron Night Cream and Moroccan Blue Nila Soap. Natural, doctor-guided skincare for all skin types."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+<style>
+.products-list{display:flex;flex-direction:column;gap:64px}
+.product-feature{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.product-feature.reverse{direction:rtl}
+.product-feature.reverse>*{direction:ltr}
+.product-img-wrap{position:relative;border-radius:24px;overflow:hidden;box-shadow:0 24px 64px rgba(26,122,74,.15)}
+.product-img-wrap img{width:100%;height:420px;object-fit:cover;transition:transform .5s ease}
+.product-img-wrap:hover img{transform:scale(1.04)}
+.product-detail-tag{display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--color-primary);background:var(--color-primary-xlight);padding:6px 16px;border-radius:999px;margin-bottom:16px}
+.product-detail-title{font-family:'Poppins',sans-serif;font-size:clamp(26px,3vw,38px);font-weight:800;color:var(--color-heading);margin-bottom:8px}
+.product-detail-subtitle{font-size:16px;font-style:italic;color:var(--color-primary);margin-bottom:20px;font-family:'Poppins',sans-serif;font-weight:500}
+.product-detail-desc{font-size:15px;color:var(--color-muted);line-height:1.8;margin-bottom:24px}
+.ingredients-pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.benefits-mini{display:flex;flex-direction:column;gap:8px;margin-bottom:28px}
+.benefit-mini-item{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--color-body)}
+.benefit-mini-check{width:20px;height:20px;background:var(--color-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;flex-shrink:0}
+.suitable-badge{display:inline-flex;align-items:center;gap:8px;background:var(--color-cream);border:1px solid var(--color-border);border-radius:12px;padding:10px 18px;font-size:14px;font-weight:600;color:var(--color-heading);margin-bottom:24px}
+@media(max-width:900px){
+  .product-feature,.product-feature.reverse{grid-template-columns:1fr;direction:ltr}
+  .product-img-wrap{max-height:300px}
+  .product-img-wrap img{height:300px}
+}
+</style>
+</head>
+<body>
+<!-- PAGE LOADER -->
+<div class="page-loader" id="pageLoader">
+  <div class="loader-mortar">
+    <div class="loader-leaf leaf-1">🌿</div>
+    <div class="loader-leaf leaf-2">🍃</div>
+    <div class="loader-leaf leaf-3">✨</div>
+    <div class="mortar-pestle"></div>
+    <div class="mortar-bowl"></div>
+  </div>
+  <div class="loader-text">RAWDAH NATURALS</div>
+  <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+</div>
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🌿</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">RAWDAH NATURALS</span>
+        <span class="nav-logo-tagline">Pure Nature • Trusted Care</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Contact Us</a></div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a><a href="about.html">About Us</a><a href="products.html">Products</a><a href="contact.html">Contact</a>
+</div>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="page-hero-label">🛍️ Natural Skincare</div>
+    <h1>Our Products</h1>
+    <p>Premium herbal formulations for healthier, glowing skin — made with nature's finest ingredients</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span class="breadcrumb-sep">›</span><span>Products</span>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="products-list">
+      <!-- PRODUCT 1 -->
+      <div class="product-feature reveal">
+        <div class="product-img-wrap">
+          <img src="images/saffron-night-cream.png" alt="Saffron Night Cream by RAWDAH NATURALS"/>
+        </div>
+        <div>
+          <span class="product-detail-tag">✨ Overnight Care</span>
+          <h2 class="product-detail-title">Saffron Night Cream</h2>
+          <p class="product-detail-subtitle">Wake Up to Healthy, Soft &amp; Glowing Skin</p>
+          <p class="product-detail-desc">RAWDAH NATURALS Saffron Night Cream is a nourishing overnight skincare cream enriched with Saffron, Aloe Vera, Rice Starch, Almond Oil, Vitamin E, and Glycerine. The lightweight formula deeply hydrates the skin while helping improve the appearance of dullness, dryness, and rough texture.</p>
+          <p style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--color-heading);margin-bottom:10px">Key Ingredients</p>
+          <div class="ingredients-pills">
+            <span class="ingredient-chip">🌸 Saffron</span>
+            <span class="ingredient-chip">🌿 Aloe Vera</span>
+            <span class="ingredient-chip">🌾 Rice Starch</span>
+            <span class="ingredient-chip">🥜 Almond Oil</span>
+            <span class="ingredient-chip">💊 Vitamin E</span>
+            <span class="ingredient-chip">💧 Glycerine</span>
+          </div>
+          <p style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--color-heading);margin-bottom:10px">Key Benefits</p>
+          <div class="benefits-mini">
+            <div class="benefit-mini-item"><div class="benefit-mini-check">✓</div>Deep overnight hydration</div>
+            <div class="benefit-mini-item"><div class="benefit-mini-check">✓</div>Helps improve dull-looking skin</div>
+            <div class="benefit-mini-item"><div class="benefit-mini-check">✓</div>Softer, smoother skin texture</div>
+            <div class="benefit-mini-item"><div class="benefit-mini-check">✓</div>Supports healthy skin barrier</div>
+          </div>
+          <div class="suitable-badge">👤 Suitable For: All Skin Types</div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <a href="product-saffron.html" class="btn btn-primary">Full Product Details →</a>
+            <a href="contact.html" class="btn btn-secondary">Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- PRODUCT 2 -->
+      <div class="product-feature reverse reveal">
+        <div class="product-img-wrap">
+          <img src="images/moroccan-blue-nila-soap.png" alt="Moroccan Blue Nila Soap by RAWDAH NATURALS"/>
+        </div>
+        <div>
+          <span class="product-detail-tag">💧 Daily Cleansing</span>
+          <h2 class="product-detail-title">Moroccan Blue Nila Soap</h2>
+          <p class="product-detail-subtitle">Traditional Moroccan Skin Care</p>
+          <p class="product-detail-desc">RAWDAH NATURALS Moroccan Blue Nila Soap is a traditional skincare soap enriched with Moroccan Blue Indigo, Almond Oil, Rice Starch, Milk Powder, Vitamin E, and Glycerine. It gently cleanses the skin while helping improve the appearance of dullness and uneven skin tone.</p>
+          <p style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--color-heading);margin-bottom:10px">Active Ingredients</p>
+          <div class="ingredients-pills">
+            <span class="ingredient-chip">💙 Blue Indigo</span>
+            <span class="ingredient-chip">💧 Glycerine</span>
+            <span class="ingredient-chip">🥜 Almond Oil</span>
+            <span class="ingredient-chip">🥛 Milk Powder</span>
+            <span class="ingredient-chip">💊 Vitamin E</span>
+            <span class="ingredient-chip">🌾 Rice Starch</span>
+          </div>
+          <p style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--color-heading);margin-bottom:10px">Key Benefits</p>
+          <div class="benefits-mini">
+            <div class="benefit-mini-item"><div class="benefit-mini-check">✓</div>Removes dirt &amp; impurities gently</div>
+            <div class="benefit-mini-item"><div class="benefit-mini-check">✓</div>Helps improve dull-looking skin</div>
+            <div class="benefit-mini-item"><div class="benefit-mini-check">✓</div>Moisturizes &amp; leaves skin refreshed</div>
+            <div class="benefit-mini-item"><div class="benefit-mini-check">✓</div>Helps reduce appearance of dark spots</div>
+          </div>
+          <div class="suitable-badge">👤 Suitable For: All Skin Types</div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <a href="product-nila.html" class="btn btn-primary">Full Product Details →</a>
+            <a href="contact.html" class="btn btn-secondary">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-alt" style="text-align:center">
+  <div class="container">
+    <span class="section-label">Place an Order</span>
+    <h2 class="section-title">Interested in Our Products?</h2>
+    <p class="section-subtitle" style="margin:0 auto 28px">Contact us to place your order or for any product queries. We're happy to assist you.</p>
+    <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap">
+      <a href="contact.html" class="btn btn-primary btn-lg">Contact for Orders</a>
+      <a href="tel:9356558115" class="btn btn-secondary btn-lg">📞 Call Us Now</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo-name">🌿 RAWDAH NATURALS</div>
+        <p class="footer-tagline">Premium Herbal &amp; Natural Skincare Products.</p>
+        <div class="footer-contact-item">📞 <a href="tel:9356558115">9356558115</a></div>
+        <div class="footer-contact-item" style="margin-top:8px">✉️ <a href="mailto:rawdahnaturals@gmail.com">rawdahnaturals@gmail.com</a></div>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="products.html">Products</a><a href="contact.html">Contact</a></div>
+      </div>
+      <div>
+        <div class="footer-col-title">Products</div>
+        <div class="footer-links"><a href="product-saffron.html">Saffron Night Cream</a><a href="product-nila.html">Moroccan Blue Nila Soap</a></div>
+      </div>
+      <div>
+        <div class="footer-col-title">Address</div>
+        <p style="font-size:14px;color:rgba(255,255,255,.65);line-height:1.75">Street No. 3, Karim Nagar,<br/>Near Sillod Kannad Road,<br/>Kannad, District Aurangabad,<br/>Maharashtra – 431103</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-bottom-text">© 2026 RAWDAH NATURALS. All Rights Reserved.</span>
+      <span class="footer-bottom-text">Dr. Umer Adil Khan &amp; Dr. Farheen Ansari</span>
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/919356558115" class="whatsapp-btn" target="_blank" rel="noopener">💬</a>
+<button class="scroll-top" id="scrollTop">↑</button>
+<script>
+const navbar=document.getElementById('navbar');
+const scrollTop=document.getElementById('scrollTop');
+window.addEventListener('scroll',()=>{navbar.classList.toggle('scrolled',window.scrollY>20);scrollTop.classList.toggle('visible',window.scrollY>400)});
+scrollTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('open'));
+const obs=new IntersectionObserver(e=>e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+<script>
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const loader = document.getElementById('pageLoader');
+    if(loader) loader.classList.add('hidden');
+  }, 1200);
+});
+</script>
+</body>
+</html>

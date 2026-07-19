@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>About Us — RAWDAH NATURALS</title>
+<meta name="description" content="Learn about RAWDAH NATURALS, founded by Dr. Umer Adil Khan and Dr. Farheen Ansari. Our mission is to bring premium herbal skincare rooted in nature and science."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+<style>
+.mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.mission-text .section-subtitle{max-width:100%}
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.value-card{background:var(--color-white);border:1px solid var(--color-border);border-radius:20px;padding:32px 24px;box-shadow:var(--shadow-card);transition:all .3s ease}
+.value-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-card-hover);border-color:var(--color-primary)}
+.value-icon{font-size:40px;margin-bottom:16px;display:block}
+.value-card h4{font-family:'Poppins',sans-serif;font-weight:700;font-size:17px;color:var(--color-heading);margin-bottom:10px}
+.value-card p{font-size:14px;color:var(--color-muted);line-height:1.65}
+.doctors-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.doctor-card{background:var(--color-white);border:1px solid var(--color-border);border-radius:24px;overflow:hidden;box-shadow:var(--shadow-card);transition:all .3s ease;text-align:center}
+.doctor-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-card-hover)}
+.doctor-avatar{width:100%;height:200px;display:flex;align-items:center;justify-content:center;font-size:80px;background:linear-gradient(135deg,var(--color-primary-xlight),var(--color-cream))}
+.doctor-body{padding:28px 24px 32px}
+.doctor-name{font-family:'Poppins',sans-serif;font-size:22px;font-weight:800;color:var(--color-heading);margin-bottom:6px}
+.doctor-title{font-size:14px;color:var(--color-primary);font-weight:600;margin-bottom:16px}
+.doctor-desc{font-size:14px;color:var(--color-muted);line-height:1.7}
+.timeline{max-width:720px;margin:0 auto}
+.timeline-item{display:flex;gap:24px;margin-bottom:36px}
+.timeline-icon{width:48px;height:48px;background:var(--color-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;margin-top:4px}
+.timeline-content h4{font-family:'Poppins',sans-serif;font-weight:700;font-size:17px;color:var(--color-heading);margin-bottom:6px}
+.timeline-content p{font-size:14px;color:var(--color-muted);line-height:1.65}
+@media(max-width:768px){
+  .mission-grid,.doctors-grid,.values-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<!-- PAGE LOADER -->
+<div class="page-loader" id="pageLoader">
+  <div class="loader-mortar">
+    <div class="loader-leaf leaf-1">🌿</div>
+    <div class="loader-leaf leaf-2">🍃</div>
+    <div class="loader-leaf leaf-3">✨</div>
+    <div class="mortar-pestle"></div>
+    <div class="mortar-bowl"></div>
+  </div>
+  <div class="loader-text">RAWDAH NATURALS</div>
+  <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+</div>
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🌿</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">RAWDAH NATURALS</span>
+        <span class="nav-logo-tagline">Pure Nature • Trusted Care</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="contact.html" class="btn btn-primary">Contact Us</a></div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="products.html">Products</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <div class="page-hero-label">🌿 Our Story</div>
+    <h1>About RAWDAH NATURALS</h1>
+    <p>Rooted in nature, guided by science — meet the people and mission behind our herbal skincare brand</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>About Us</span>
+    </div>
+  </div>
+</div>
+
+<!-- MISSION -->
+<section class="section">
+  <div class="container">
+    <div class="mission-grid">
+      <div class="mission-text reveal">
+        <span class="section-label">Our Mission</span>
+        <h2 class="section-title">Nature-Powered Skincare You Can Trust</h2>
+        <p class="section-subtitle" style="max-width:100%;margin-bottom:16px">At RAWDAH NATURALS, we believe that healthy skin begins with the power of nature. Our products are formulated using carefully selected herbal ingredients and skin-friendly components to help nourish, hydrate, and care for your skin.</p>
+        <p style="font-size:15px;color:var(--color-muted);line-height:1.75;margin-bottom:16px">Under the guidance of experienced medical professionals, our mission is to provide high-quality natural skincare products that combine traditional knowledge with modern skincare practices.</p>
+        <p style="font-size:15px;color:var(--color-muted);line-height:1.75;margin-bottom:28px">We are committed to quality, safety, and customer satisfaction — ensuring every product that reaches you meets our high standards of excellence.</p>
+        <div class="trust-pills" style="display:flex;flex-wrap:wrap;gap:10px">
+          <span style="display:inline-flex;align-items:center;gap:6px;background:#d4eddf;border:1px solid rgba(26,122,74,.2);border-radius:999px;padding:8px 16px;font-size:13px;font-weight:600;color:#0d4a2e">🌱 Natural Ingredients</span>
+          <span style="display:inline-flex;align-items:center;gap:6px;background:#d4eddf;border:1px solid rgba(26,122,74,.2);border-radius:999px;padding:8px 16px;font-size:13px;font-weight:600;color:#0d4a2e">👨‍⚕️ Doctor Guided</span>
+          <span style="display:inline-flex;align-items:center;gap:6px;background:#d4eddf;border:1px solid rgba(26,122,74,.2);border-radius:999px;padding:8px 16px;font-size:13px;font-weight:600;color:#0d4a2e">✅ Quality Tested</span>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div style="background:var(--color-cream);border-radius:24px;padding:40px;border:1px solid var(--color-border)">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-icon">🌿</div>
+              <div class="timeline-content">
+                <h4>Founded on Nature's Wisdom</h4>
+                <p>RAWDAH NATURALS was born from a belief that traditional herbal ingredients hold the key to genuinely healthy skin.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon">👨‍⚕️</div>
+              <div class="timeline-content">
+                <h4>Doctor-Guided Formulation</h4>
+                <p>Each product is developed under the guidance of experienced medical professionals, blending traditional knowledge with modern science.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon">✅</div>
+              <div class="timeline-content">
+                <h4>Quality Commitment</h4>
+                <p>Every batch is carefully quality-checked to ensure safety, efficacy, and consistency for our customers.</p>
+              </div>
+            </div>
+            <div class="timeline-item" style="margin-bottom:0">
+              <div class="timeline-icon">💚</div>
+              <div class="timeline-content">
+                <h4>Community & Customer Care</h4>
+                <p>Based in Kannad, Maharashtra, we serve our local community and beyond with affordable premium herbal skincare.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR VALUES -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header center reveal">
+      <span class="section-label">Our Values</span>
+      <h2 class="section-title">What We Stand For</h2>
+      <p class="section-subtitle">The principles that guide everything we do at RAWDAH NATURALS</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal reveal-delay-1">
+        <span class="value-icon">🌿</span>
+        <h4>Natural Purity</h4>
+        <p>We source only the finest natural and herbal ingredients, avoiding harsh chemicals that could harm your skin.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-2">
+        <span class="value-icon">🔬</span>
+        <h4>Science-Backed Care</h4>
+        <p>Our formulations combine traditional herbal wisdom with modern dermatological understanding for effective results.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-3">
+        <span class="value-icon">🤝</span>
+        <h4>Customer Trust</h4>
+        <p>We believe in transparency, honest product claims, and building long-term relationships with our customers.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-1">
+        <span class="value-icon">✅</span>
+        <h4>Quality Assurance</h4>
+        <p>Rigorous quality checks ensure every product meets our high standards before reaching you.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-2">
+        <span class="value-icon">💛</span>
+        <h4>Accessibility</h4>
+        <p>Premium herbal skincare should be accessible to everyone — we keep our products affordable without compromising quality.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-3">
+        <span class="value-icon">🌍</span>
+        <h4>Community</h4>
+        <p>Proudly rooted in Kannad, Maharashtra, serving our local community with premium natural skincare products.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEET OUR DOCTORS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header center reveal">
+      <span class="section-label">Our Team</span>
+      <h2 class="section-title">Meet Our Founders</h2>
+      <p class="section-subtitle">RAWDAH NATURALS is founded and guided by experienced medical professionals dedicated to your skin health</p>
+    </div>
+    <div class="doctors-grid">
+      <div class="doctor-card reveal reveal-delay-1">
+        <div class="doctor-avatar">👨‍⚕️</div>
+        <div class="doctor-body">
+          <div class="doctor-name">Dr. Umer Adil Khan</div>
+          <div class="doctor-title">Co-Founder & Director</div>
+          <p class="doctor-desc">Dr. Umer Adil Khan brings his medical expertise and passion for herbal medicine to RAWDAH NATURALS. His vision is to make high-quality natural skincare accessible to all, formulated with professional knowledge and traditional herbal wisdom.</p>
+        </div>
+      </div>
+      <div class="doctor-card reveal reveal-delay-2">
+        <div class="doctor-avatar">👩‍⚕️</div>
+        <div class="doctor-body">
+          <div class="doctor-name">Dr. Farheen Ansari</div>
+          <div class="doctor-title">Co-Founder & Director</div>
+          <p class="doctor-desc">Dr. Farheen Ansari brings her expertise in skin health and herbal formulations to every RAWDAH NATURALS product. Her commitment to natural, skin-friendly ingredients ensures each product is both effective and gentle.</p>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px">
+      <p style="font-size:16px;color:var(--color-muted);margin-bottom:24px">Have questions about our products? Our founders are happy to help.</p>
+      <a href="contact.html" class="btn btn-primary btn-lg">Contact Our Team</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo-name">🌿 RAWDAH NATURALS</div>
+        <p class="footer-tagline">Premium Herbal &amp; Natural Skincare Products.</p>
+        <div class="footer-contact-item">📞 <a href="tel:9356558115">9356558115</a></div>
+        <div class="footer-contact-item" style="margin-top:8px">✉️ <a href="mailto:rawdahnaturals@gmail.com">rawdahnaturals@gmail.com</a></div>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a><a href="about.html">About Us</a><a href="products.html">Products</a><a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Products</div>
+        <div class="footer-links">
+          <a href="product-saffron.html">Saffron Night Cream</a><a href="product-nila.html">Moroccan Blue Nila Soap</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Address</div>
+        <p style="font-size:14px;color:rgba(255,255,255,.65);line-height:1.75">Street No. 3, Karim Nagar,<br/>Near Sillod Kannad Road,<br/>Kannad, District Aurangabad,<br/>Maharashtra – 431103</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-bottom-text">© 2026 RAWDAH NATURALS. All Rights Reserved.</span>
+      <span class="footer-bottom-text">Dr. Umer Adil Khan &amp; Dr. Farheen Ansari</span>
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/919356558115" class="whatsapp-btn" target="_blank" rel="noopener">💬</a>
+<button class="scroll-top" id="scrollTop">↑</button>
+<script>
+const navbar=document.getElementById('navbar');
+const scrollTop=document.getElementById('scrollTop');
+window.addEventListener('scroll',()=>{navbar.classList.toggle('scrolled',window.scrollY>20);scrollTop.classList.toggle('visible',window.scrollY>400)});
+scrollTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('open'));
+const obs=new IntersectionObserver(e=>e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+<script>
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const loader = document.getElementById('pageLoader');
+    if(loader) loader.classList.add('hidden');
+  }, 1200);
+});
+</script>
+</body>
+</html>

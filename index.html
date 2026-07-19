@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>RAWDAH NATURALS — Pure Nature, Trusted Care, Healthy Skin</title>
+<meta name="description" content="RAWDAH NATURALS offers premium herbal and natural skincare products including Saffron Night Cream and Moroccan Blue Nila Soap. Formulated by doctors for healthier, glowing skin."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+<style>
+/* ---- HERO ---- */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:linear-gradient(135deg,#0d4a2e 0%,#1a7a4a 55%,#2d8a5e 100%);padding-top:var(--nav-height)}
+.hero-bg-pattern{position:absolute;inset:0;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+.hero-orb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.18}
+.hero-orb-1{width:500px;height:500px;background:#c9a84c;top:-100px;right:-100px}
+.hero-orb-2{width:350px;height:350px;background:#4a9a6a;bottom:-80px;left:-80px}
+.hero-content{position:relative;z-index:2;max-width:var(--max-width);margin:0 auto;padding:80px var(--space-lg);display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.35);border-radius:999px;padding:8px 20px;font-size:13px;font-weight:600;color:#f0e0a0;letter-spacing:1px;text-transform:uppercase;margin-bottom:24px}
+.hero-title{font-family:'Poppins',sans-serif;font-size:clamp(40px,5.5vw,68px);font-weight:800;color:#fff;line-height:1.05;margin-bottom:16px;letter-spacing:-1px}
+.hero-title span{color:#c9a84c}
+.hero-tagline{font-family:'Poppins',sans-serif;font-size:18px;font-weight:500;color:rgba(255,255,255,.8);margin-bottom:20px;letter-spacing:.5px}
+.hero-desc{font-size:17px;color:rgba(255,255,255,.72);line-height:1.75;margin-bottom:36px;max-width:480px}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+.hero-btns .btn-gold{padding:16px 36px;font-size:16px}
+.hero-btns .btn-outline-white{display:inline-flex;align-items:center;gap:8px;padding:16px 36px;font-size:16px;font-family:'Poppins',sans-serif;font-weight:600;border:2px solid rgba(255,255,255,.5);border-radius:16px;color:#fff;transition:all .3s ease;text-decoration:none}
+.hero-btns .btn-outline-white:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.8)}
+.hero-stats{display:flex;gap:32px;margin-top:40px}
+.hero-stat{text-align:center}
+.hero-stat-num{font-family:'Poppins',sans-serif;font-size:28px;font-weight:800;color:#c9a84c;display:block}
+.hero-stat-label{font-size:12px;color:rgba(255,255,255,.6);letter-spacing:.5px;text-transform:uppercase}
+.hero-visual{position:relative;display:flex;justify-content:center;align-items:center}
+.hero-product-showcase{position:relative;width:100%;max-width:440px}
+.hero-card-main{background:rgba(255,255,255,.08);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.15);border-radius:24px;overflow:hidden;box-shadow:0 32px 64px rgba(0,0,0,.3)}
+.hero-card-main img{width:100%;height:280px;object-fit:cover}
+.hero-card-info{padding:20px 24px}
+.hero-card-info h3{font-family:'Poppins',sans-serif;font-size:18px;font-weight:700;color:#fff;margin-bottom:6px}
+.hero-card-info p{font-size:13px;color:rgba(255,255,255,.65)}
+.hero-float-badge{position:absolute;top:-18px;right:-18px;background:linear-gradient(135deg,#c9a84c,#a8893a);border-radius:16px;padding:14px 18px;box-shadow:0 8px 24px rgba(201,168,76,.4)}
+.hero-float-badge span{display:block;font-family:'Poppins',sans-serif;font-size:13px;font-weight:700;color:#fff}
+.hero-float-badge small{font-size:11px;color:rgba(255,255,255,.75)}
+.hero-float-bottom{position:absolute;bottom:-18px;left:-18px;background:rgba(255,255,255,.95);border-radius:16px;padding:14px 18px;box-shadow:0 8px 32px rgba(0,0,0,.15)}
+.hero-float-bottom span{display:block;font-family:'Poppins',sans-serif;font-size:13px;font-weight:700;color:#0d4a2e}
+.hero-float-bottom small{font-size:11px;color:#6b7280}
+/* ---- ABOUT ---- */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-img-wrap{position:relative}
+.about-img-wrap img{border-radius:24px;box-shadow:0 24px 64px rgba(26,122,74,.2);width:100%;height:420px;object-fit:cover}
+.about-img-badge{position:absolute;bottom:24px;right:-24px;background:#fff;border-radius:16px;padding:20px 24px;box-shadow:0 8px 32px rgba(0,0,0,.12);text-align:center}
+.about-img-badge .num{font-family:'Poppins',sans-serif;font-size:32px;font-weight:800;color:#1a7a4a;line-height:1}
+.about-img-badge .lbl{font-size:13px;color:#6b7280;margin-top:4px}
+.about-text .section-subtitle{max-width:100%}
+.trust-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.trust-pill{display:inline-flex;align-items:center;gap:6px;background:#d4eddf;border:1px solid rgba(26,122,74,.2);border-radius:999px;padding:8px 16px;font-size:13px;font-weight:600;color:#0d4a2e}
+/* ---- PRODUCTS ---- */
+.products-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+/* ---- WHY CHOOSE US ---- */
+.why-section{background:linear-gradient(135deg,#0d4a2e 0%,#1a7a4a 100%);position:relative;overflow:hidden}
+.why-section .section-label{background:rgba(255,255,255,.12);color:#f0e0a0;border:1px solid rgba(255,255,255,.2)}
+.why-section .section-title{color:#fff}
+.why-section .section-subtitle{color:rgba(255,255,255,.75)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.why-card{background:rgba(255,255,255,.08);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:32px 24px;text-align:center;transition:all .3s ease}
+.why-card:hover{background:rgba(255,255,255,.14);transform:translateY(-4px)}
+.why-icon{font-size:40px;margin-bottom:16px;display:block}
+.why-card h4{font-family:'Poppins',sans-serif;font-weight:700;font-size:17px;color:#fff;margin-bottom:8px}
+.why-card p{font-size:14px;color:rgba(255,255,255,.7);line-height:1.6}
+/* ---- CTA SECTION ---- */
+.cta-section{background:var(--color-cream);text-align:center}
+.cta-inner{max-width:640px;margin:0 auto}
+.cta-contact-info{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin:32px 0}
+.cta-contact-item{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--color-body)}
+.cta-contact-item a{color:var(--color-primary);font-weight:600;transition:color .2s}
+.cta-contact-item a:hover{color:var(--color-primary-dark)}
+/* ---- RESPONSIVE ---- */
+@media(max-width:900px){
+  .hero-content{grid-template-columns:1fr}
+  .hero-visual{display:none}
+  .about-grid{grid-template-columns:1fr}
+  .about-img-wrap{display:none}
+  .products-grid{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .hero-stats{gap:20px}
+  .why-grid{grid-template-columns:1fr}
+  .cta-contact-info{flex-direction:column;align-items:center;gap:16px}
+}
+</style>
+</head>
+<body>
+<!-- PAGE LOADER -->
+<div class="page-loader" id="pageLoader">
+  <div class="loader-mortar">
+    <div class="loader-leaf leaf-1">🌿</div>
+    <div class="loader-leaf leaf-2">🍃</div>
+    <div class="loader-leaf leaf-3">✨</div>
+    <div class="mortar-pestle"></div>
+    <div class="mortar-bowl"></div>
+  </div>
+  <div class="loader-text">RAWDAH NATURALS</div>
+  <div class="loader-progress"><div class="loader-progress-bar"></div></div>
+</div>
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🌿</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">RAWDAH NATURALS</span>
+        <span class="nav-logo-tagline">Pure Nature • Trusted Care</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="products.html">Products</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" style="color:var(--color-primary);font-weight:700">📞 9356558115</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge">🌿 Herbal &amp; Natural Skincare</div>
+      <h1 class="hero-title">RAWDAH<br/><span>NATURALS</span></h1>
+      <p class="hero-tagline">Pure Nature • Trusted Care • Healthy Skin</p>
+      <p class="hero-desc">Premium Herbal &amp; Natural Skincare Products made with carefully selected ingredients for healthier, glowing skin.</p>
+      <div class="hero-btns">
+        <a href="products.html" class="btn btn-gold btn-lg">🛍️ Shop Products</a>
+        <a href="contact.html" class="btn-outline-white">📞 Contact Us</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="hero-stat-num">2</span><span class="hero-stat-label">Products</span></div>
+        <div class="hero-stat"><span class="hero-stat-num">100%</span><span class="hero-stat-label">Natural</span></div>
+        <div class="hero-stat"><span class="hero-stat-num">Dr.</span><span class="hero-stat-label">Formulated</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-product-showcase">
+        <div class="hero-float-badge">
+          <span>⭐ Premium Quality</span>
+          <small>Doctor Formulated</small>
+        </div>
+        <div class="hero-card-main">
+          <img src="images/saffron-night-cream.png" alt="Saffron Night Cream by RAWDAH NATURALS"/>
+          <div class="hero-card-info">
+            <h3>Saffron Night Cream</h3>
+            <p>Nourishing overnight skincare for glowing skin</p>
+          </div>
+        </div>
+        <div class="hero-float-bottom">
+          <span>🌿 100% Natural Ingredients</span>
+          <small>Skin-Friendly Formulation</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <img src="images/hero-background.png" alt="Natural herbal ingredients"/>
+        <div class="about-img-badge">
+          <div class="num">🌿</div>
+          <div class="lbl">Pure Natural</div>
+        </div>
+      </div>
+      <div class="about-text reveal reveal-delay-2">
+        <span class="section-label">About RAWDAH NATURALS</span>
+        <h2 class="section-title">Nature's Best for Your Skin</h2>
+        <p class="section-subtitle" style="max-width:100%;margin-bottom:20px">At RAWDAH NATURALS, we believe that healthy skin begins with the power of nature. Our products are formulated using carefully selected herbal ingredients and skin-friendly components to help nourish, hydrate, and care for your skin.</p>
+        <p style="font-size:15px;color:var(--color-muted);line-height:1.75;margin-bottom:24px">Under the guidance of experienced medical professionals, our mission is to provide high-quality natural skincare products that combine traditional knowledge with modern skincare practices. We are committed to quality, safety, and customer satisfaction.</p>
+        <div class="trust-pills">
+          <span class="trust-pill">🌱 Natural Ingredients</span>
+          <span class="trust-pill">👨‍⚕️ Doctor Formulated</span>
+          <span class="trust-pill">✅ Quality Tested</span>
+          <span class="trust-pill">💚 Skin Friendly</span>
+        </div>
+        <a href="about.html" class="btn btn-primary" style="margin-top:28px">Learn More About Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="section section-alt" id="products">
+  <div class="container">
+    <div class="section-header center reveal">
+      <span class="section-label">Our Products</span>
+      <h2 class="section-title">Featured Natural Skincare</h2>
+      <p class="section-subtitle">Carefully formulated products to help your skin look and feel its best</p>
+    </div>
+    <div class="products-grid">
+      <a href="product-saffron.html" class="card product-card reveal reveal-delay-1" style="text-decoration:none">
+        <div class="product-card-image">
+          <img src="images/saffron-night-cream.png" alt="Saffron Night Cream"/>
+        </div>
+        <div class="product-card-body">
+          <span class="product-card-tag">✨ Overnight Care</span>
+          <h3 class="product-card-title">Saffron Night Cream</h3>
+          <p class="product-card-desc">A nourishing overnight cream enriched with Saffron, Aloe Vera, Almond Oil &amp; Vitamin E. Helps improve the appearance of dull, dry skin while you sleep.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px">
+            <span class="ingredient-chip">🌸 Saffron</span>
+            <span class="ingredient-chip">🌿 Aloe Vera</span>
+            <span class="ingredient-chip">🌾 Rice Starch</span>
+            <span class="ingredient-chip">🥜 Almond Oil</span>
+          </div>
+          <span class="btn btn-primary" style="width:100%;justify-content:center">View Product Details →</span>
+        </div>
+      </a>
+      <a href="product-nila.html" class="card product-card reveal reveal-delay-2" style="text-decoration:none">
+        <div class="product-card-image">
+          <img src="images/moroccan-blue-nila-soap.png" alt="Moroccan Blue Nila Soap"/>
+        </div>
+        <div class="product-card-body">
+          <span class="product-card-tag">💧 Daily Cleansing</span>
+          <h3 class="product-card-title">Moroccan Blue Nila Soap</h3>
+          <p class="product-card-desc">A traditional Moroccan skincare soap with Blue Indigo, Almond Oil &amp; Milk Powder. Gently cleanses while helping improve skin tone and texture.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px">
+            <span class="ingredient-chip">💙 Blue Indigo</span>
+            <span class="ingredient-chip">🥛 Milk Powder</span>
+            <span class="ingredient-chip">🥜 Almond Oil</span>
+            <span class="ingredient-chip">💧 Glycerine</span>
+          </div>
+          <span class="btn btn-primary" style="width:100%;justify-content:center">View Product Details →</span>
+        </div>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="products.html" class="btn btn-secondary btn-lg">View All Products</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section why-section">
+  <div class="container">
+    <div class="section-header center reveal">
+      <span class="section-label">Why Choose Us</span>
+      <h2 class="section-title">Why RAWDAH NATURALS?</h2>
+      <p class="section-subtitle">We combine nature's best ingredients with professional expertise to deliver premium skincare</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal reveal-delay-1">
+        <span class="why-icon">🌿</span>
+        <h4>Premium Natural Ingredients</h4>
+        <p>Every ingredient is carefully selected from nature's finest sources for maximum efficacy</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <span class="why-icon">💚</span>
+        <h4>Skin-Friendly Formulations</h4>
+        <p>Gentle formulas designed to be suitable for all skin types with minimal irritation risk</p>
+      </div>
+      <div class="why-card reveal reveal-delay-3">
+        <span class="why-icon">🌱</span>
+        <h4>Herbal Extracts</h4>
+        <p>Rich in traditional herbal wisdom combined with modern skincare science</p>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <span class="why-icon">✅</span>
+        <h4>Quality Tested Products</h4>
+        <p>Every product is carefully quality-checked before reaching your hands</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <span class="why-icon">🤝</span>
+        <h4>Customer Satisfaction</h4>
+        <p>Your satisfaction is our priority — we're committed to delivering results you'll love</p>
+      </div>
+      <div class="why-card reveal reveal-delay-3">
+        <span class="why-icon">💛</span>
+        <h4>Affordable Premium Care</h4>
+        <p>Luxury-quality herbal skincare made accessible for everyone</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section">
+  <div class="container">
+    <div class="cta-inner">
+      <span class="section-label">Get in Touch</span>
+      <h2 class="section-title">Ready to Experience Natural Skincare?</h2>
+      <p class="section-subtitle" style="margin:0 auto 16px">Contact us today to place your order or learn more about our products. Our team is here to help you.</p>
+      <div class="cta-contact-info">
+        <div class="cta-contact-item">📞 <a href="tel:9356558115">9356558115</a></div>
+        <div class="cta-contact-item">✉️ <a href="mailto:rawdahnaturals@gmail.com">rawdahnaturals@gmail.com</a></div>
+      </div>
+      <a href="contact.html" class="btn btn-primary btn-lg">Contact Us Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo-name">🌿 RAWDAH NATURALS</div>
+        <p class="footer-tagline">Premium Herbal &amp; Natural Skincare Products made with carefully selected ingredients for healthier, glowing skin.</p>
+        <div class="footer-contact-item">📞 <a href="tel:9356558115">9356558115</a></div>
+        <div class="footer-contact-item" style="margin-top:8px">✉️ <a href="mailto:rawdahnaturals@gmail.com">rawdahnaturals@gmail.com</a></div>
+      </div>
+      <div>
+        <div class="footer-col-title">Quick Links</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Products</div>
+        <div class="footer-links">
+          <a href="product-saffron.html">Saffron Night Cream</a>
+          <a href="product-nila.html">Moroccan Blue Nila Soap</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Address</div>
+        <p style="font-size:14px;color:rgba(255,255,255,.65);line-height:1.75">Street No. 3, Karim Nagar,<br/>Near Sillod Kannad Road,<br/>Kannad, District Aurangabad,<br/>Maharashtra – 431103</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-bottom-text">© 2026 RAWDAH NATURALS. All Rights Reserved.</span>
+      <span class="footer-bottom-text">Dr. Umer Adil Khan &amp; Dr. Farheen Ansari</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/919356558115" class="whatsapp-btn" target="_blank" rel="noopener" title="Chat on WhatsApp">💬</a>
+<button class="scroll-top" id="scrollTop" title="Scroll to top">↑</button>
+
+<script>
+// Navbar scroll
+const navbar=document.getElementById('navbar');
+const scrollTop=document.getElementById('scrollTop');
+window.addEventListener('scroll',()=>{
+  navbar.classList.toggle('scrolled',window.scrollY>20);
+  scrollTop.classList.toggle('visible',window.scrollY>400);
+});
+scrollTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+// Mobile menu
+const hamburger=document.getElementById('hamburger');
+const mobileMenu=document.getElementById('mobileMenu');
+hamburger.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
+
+// Scroll reveal
+const revealEls=document.querySelectorAll('.reveal');
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:.15});
+revealEls.forEach(el=>observer.observe(el));
+</script>
+<script>
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const loader = document.getElementById('pageLoader');
+    if(loader) loader.classList.add('hidden');
+  }, 1200);
+});
+</script>
+</body>
+</html>
